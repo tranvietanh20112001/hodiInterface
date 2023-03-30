@@ -1,0 +1,155 @@
+body{
+    background-color: #01303F;
+}
+
+img.logo{
+    padding-top:10px ;
+    height: 64px;
+}
+
+img.studying-image{
+    height: 70%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+p{
+    color: white;
+    text-align: center;
+    font-family: "Sono",sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Vollkorn",sans-serif;
+}
+
+span::before {
+  content: "Chào mừng học viên đến với Cổng thông tin đào tạo từ xa";
+  animation: animate infinite 3s;
+  
+}
+
+@keyframes animate {
+
+  0% {
+      content: "Chào mừng học viên đến với Cổng thông tin đào tạo từ xa";
+  }
+
+  50% {
+      content: "Dành cho mọi lứa tuổi, thành viên";
+  }
+
+  75% {
+      content: "Chào mừng học viên đến với Cổng thông tin đào tạo từ xa";
+  }
+}
+
+a:link{
+    color: white;
+    font-family: "Vollkorn",sans-serif;
+    padding-top: 40px;
+}
+
+#menu {
+    height: 100%;
+    position:absolute;
+    background-color: #FED057;
+    width: 30%;
+    transition: 3000ms all cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(-100%);
+    left: 60px;
+}
+
+#menu.expanded {
+    transform: translateX(0%);
+    left: 0px;
+}
+
+.menu-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#blob {
+    top: 0;
+    z-index: -1;
+    right: 60px;
+    transform: translateX(100%);
+    height: 100%;
+    position: absolute;
+}
+
+#blob-path {
+    height: 100%;
+    fill:  #01303F;
+}
+
+.hamburger {
+    right: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;	
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+    bottom: 0;
+}
+
+ul li {
+  
+  color: white;
+  font-family:"Alegreya", sans-serif;
+  padding: 30px 0;
+  font-size: large;
+
+  list-style-type:none;
+
+}
+
+img.image-elearning{
+    padding-top:10px ;
+    height: 190px;
+}

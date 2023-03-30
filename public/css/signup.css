@@ -1,0 +1,163 @@
+body{
+    background-image: url("../img/bglogin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.signup{
+    width: 800px;
+    height: 416px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex; /* use flexbox layout */
+  flex-direction: row; /* align child divs horizontally */
+}
+
+/* left*/
+.image-signup img{
+    width: 100%;
+    height: 416px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px;
+}
+
+.image-signup{
+    width: 50%;
+    position: relative;
+}
+
+.image-signup-logo{
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.image-signup-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* right */
+.signup-form{
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-direction: column; 
+    align-items: center;
+}
+.username{
+    margin-top: 40px;
+    height: 15%;
+    
+}
+
+.loginname{
+    height: 15%;
+   
+}
+
+.password{
+    height: 15%;
+    
+}
+
+.gmail{
+    height: 15%;
+    
+}
+
+.checkbox{
+    height: 10%;
+    width: 100%;
+}
+
+.signup-btn{
+    height: 10%;
+    
+}
+
+input{
+    margin-bottom: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #2FAEBD;
+  width: 263px;
+  height: 46px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+    font-family: 'Inconsolata', sans-serif;
+    text-align: center;
+}
+
+input[type="text"] {
+    color: white;
+    font-style: italic;
+    font-family: 'Inconsolata', sans-serif;
+    text-align: center;
+}
+
+input[type="password"] {
+    color: white;
+    font-style: italic;
+    font-family: 'Inconsolata', sans-serif;
+    text-align: center;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #2196F3;
+    border-color: #2196F3;
+  }
+
+  .login-btn{
+    height: 10%;
+}
+
+button{
+    cursor: pointer;
+    width: 263px;
+    height: 46px;
+    background-color: #321F71;
+    border: none;
+    border-radius: 30px;
+    color:white;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+button:hover{
+    background-color: #01303F;
+}
+
+.login-btn{
+    height: 10%;
+}
+
+.login-btn a{
+    color: red;
+    font-family: 'Inconsolata', sans-serif;
+}

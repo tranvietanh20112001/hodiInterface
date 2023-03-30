@@ -1,0 +1,10 @@
+body{
+    background-image: url("../img/intropage1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+header{
+    opacity: 20%;
+}
