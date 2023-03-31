@@ -1,0 +1,196 @@
+body {
+    background-color: #01303F;
+    font-family: "Inconsolata", sans-serif;
+    scrollbar-width: none;
+}
+
+.logo {
+    height: 64px;
+}
+
+/* search form*/
+
+
+p {
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 12px;
+}
+
+/* button header */
+button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+#top-right {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-left: 12px;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    size: 16px;
+}
+
+i{
+    color: #01303F;
+}
+
+.input-icons input:focus + i{
+    display: none;
+}
+
+li i{
+    margin-right: 10px;
+}
+
+.notificationButton ul,.messButton ul,.friendsButton ul{
+    width: 500px;
+}
+
+.heading{
+    color: #01303F;
+    font-size: 24px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.content{
+    text-align: center;
+}
+
+.heading-text{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.test-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.test-header i{
+    color: white;
+    margin-left: 60%;
+    margin-top: 10px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.avatar-list-contact{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.post-button{
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.modal-footer button{
+    width: 20%;
+}
+
+.avatar-post{
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.person-name{
+    font-weight: bolder;
+}
+
+.status-uploaded p{
+    color: #01303F;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.post{
+    width: 100%;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.image-uploaded{
+    width: 100%;
+    position: relative;
+}
+
+.image-uploaded img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.like-share{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.like, .share{
+    width: 50%;
+}
+.like p, .share p{
+    color: #01303F;
+    font-size: large;
+    text-align: center;
+}
+
+.friend-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.friend-header i{
+    width: 16px;
+    color: white;
+    margin-left: 60%;
+    margin-top: 12px;
+}
+
+#center{
+    height: 100vh;
+    overflow-y: auto; 
+    scrollbar-width: none;
+}
+
+#center::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+#header{
+    transition: background-color 0.5s ease-in-out;
+    margin-top: 12px;
+    height: 10vh;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+#body{
+    margin-top: 12px;
+}
