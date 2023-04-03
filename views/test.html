@@ -6,44 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../public/css/test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Document</title>
 </head>
 
 <body>
 
   <div class="image-container">
-    <img src="../public/img/intropage1.jpg" onclick="openModal(this)">
-    <img src="../public/img/intropage2.jpg" onclick="openModal(this)">
-    <img src="../public/img/image-login.jpg" onclick="openModal(this)">
+    <img src="../public/img/intropage1.jpg" alt="Image">
+    <button class="button-on-image">Button</button>
   </div>
-    
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img id="modal-image" src="" alt="modal image">
-    </div>
-  </div>
-
-  <script>
-    // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("modal-image");
-
-function openModal(img) {
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-
-// When the user clicks on <span> (x), close the modal
-function closeModal() {
-  modal.style.display = "none";
-}
-
-  </script>
 </body>
 
 </html>

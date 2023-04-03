@@ -127,7 +127,27 @@
                     <div class="status-uploaded">
                         <p>Hello Monday</p>
                     </div>
-                    <div class="image-uploaded"><img src="../public/img/avatar2.jpg" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                    <div class="image-uploaded"><img src="../public/img/avatar2.jpg" type="button"  onclick="openModal(this)"></div>
+                    <div class="like-share">
+                        <div class="like">
+                            <p><i class="fa fa-heart"></i>Like</p>
+                        </div>
+                        <div class="share">
+                            <p><i class="fa fa-share"></i>Share</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-uploaded"> 
+                        <img src="../public/img/phuongly - avatar.jpg" class="avatar-post"> 
+                        <span class="person-name"> Nguyễn Phương Ly</span> 
+                        <span class="person-action">đã cập nhật một ảnh mới</span>
+                    </div>
+                    <div class="status-uploaded">
+                        <p>Hello Monday</p>
+                    </div>
+                    <div class="image-uploaded"><img src="../public/img/phuongly.jpg" type="button"  onclick="openModal(this)"></div>
                     <div class="like-share">
                         <div class="like">
                             <p><i class="fa fa-heart"></i>Like</p>
@@ -147,7 +167,27 @@
                     <div class="status-uploaded">
                         <p>Hello Monday</p>
                     </div>
-                    <div class="image-uploaded"><img src="../public/img/avatar2.jpg" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                    <div class="image-uploaded"><img src="../public/img/intropage1.jpg" type="button"  onclick="openModal(this)"></div>
+                    <div class="like-share">
+                        <div class="like">
+                            <p><i class="fa fa-heart"></i>Like</p>
+                        </div>
+                        <div class="share">
+                            <p><i class="fa fa-share"></i>Share</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-uploaded"> 
+                        <img src="../public/img/avatar2.jpg" class="avatar-post"> 
+                        <span class="person-name"> Nguyễn Phương Nhi</span> 
+                        <span class="person-action">đã cập nhật một ảnh mới</span>
+                    </div>
+                    <div class="status-uploaded">
+                        <p>Hello Monday</p>
+                    </div>
+                    <div class="image-uploaded"><img src="../public/img/intropage2.jpg" type="button"  onclick="openModal(this)"></div>
                     <div class="like-share">
                         <div class="like">
                             <p><i class="fa fa-heart"></i>Like</p>
@@ -209,6 +249,24 @@
       </div>
     </div>
   </div>
+
+
+  <!--- Modal image---->
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="modal-content">
+      <div class="left-modal">
+        <div class="close-icon" onclick="closeModal()"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+      <img id="modal-image" src="" alt="modal image">
+      </div>
+      <div class="right-modal">
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="../public/js/fanpage2/openImageModal.js"></script>
 </body>
 
 </html>

@@ -46,45 +46,45 @@ button {
     size: 16px;
 }
 
-i{
+i {
     color: #01303F;
 }
 
-.input-icons input:focus + i{
+.input-icons input:focus+i {
     display: none;
 }
 
-li i{
+li i {
     margin-right: 10px;
 }
 
-.notificationButton ul,.messButton ul,.friendsButton ul{
+.notificationButton ul, .messButton ul, .friendsButton ul {
     width: 500px;
 }
 
-.heading{
+.heading {
     color: #01303F;
     font-size: 24px;
     margin-left: 12px;
     font-weight: bold;
 }
 
-.content{
+.content {
     text-align: center;
 }
 
-.heading-text{
+.heading-text {
     color: white;
     font-size: 24px;
     font-weight: bold;
 }
 
-.test-header{
+.test-header {
     display: flex;
     flex-direction: row;
 }
 
-.test-header i{
+.test-header i {
     color: white;
     margin-left: 60%;
     margin-top: 10px;
@@ -92,96 +92,99 @@ li i{
     cursor: pointer;
 }
 
-.avatar-list-contact{
+.avatar-list-contact {
     border-radius: 50%;
     width: 30px;
 }
 
-.post-button{
+.post-button {
     width: 100%;
     border-radius: 10px;
     text-align: left;
     margin-left: 0px;
 }
 
-.modal-footer button{
+.modal-footer button {
     width: 20%;
 }
 
-.avatar-post{
+.avatar-post {
     border-radius: 50%;
     width: 30px;
     margin-top: 12px;
     margin-left: 12px;
 }
 
-.person-name{
+.person-name {
     font-weight: bolder;
 }
 
-.status-uploaded p{
+.status-uploaded p {
     color: #01303F;
     margin-left: 12px;
     margin-top: 12px;
 }
-.post{
+
+.post {
     width: 100%;
     background-color: white;
     margin-top: 12px;
     border-radius: 10px;
 }
 
-.image-uploaded{
+.image-uploaded {
     width: 100%;
     position: relative;
 }
 
-.image-uploaded img{
+.image-uploaded img {
     width: 100%;
     cursor: pointer;
 }
 
-.like-share{
+.like-share {
     display: flex;
     flex-direction: row;
     margin-top: 12px;
 }
 
-.like, .share{
+.like, .share {
     width: 50%;
 }
-.like p, .share p{
+
+.like p, .share p {
     color: #01303F;
     font-size: large;
     text-align: center;
 }
 
-.friend-header{
+.friend-header {
     display: flex;
     flex-direction: row;
 }
 
-.friend-header i{
+.friend-header i {
     width: 16px;
     color: white;
     margin-left: 60%;
     margin-top: 12px;
 }
 
-#center{
+#center {
     height: 100vh;
-    overflow-y: auto; 
+    overflow-y: auto;
     scrollbar-width: none;
 }
 
-#center::-webkit-scrollbar{
+#center::-webkit-scrollbar {
     display: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
-#header{
+
+#header {
     transition: background-color 0.5s ease-in-out;
     margin-top: 12px;
     height: 10vh;
@@ -191,6 +194,67 @@ hr.solid {
     border-top: 3px solid #bbb;
 }
 
-#body{
+#body {
     margin-top: 12px;
+}
+
+
+#modal-content{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-modal{
+    width: 75%;
+    background-color: black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.right-modal{
+    width: 25%;
+}
+#modal-image{
+   max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.close-icon{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  color: #333;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.close-icon:hover{
+    background-color: aliceblue;
+}
+
+
+.close-icon i{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+
+.like p{
+    cursor: pointer;
+}
+.like i:active{
+    color: red;
 }

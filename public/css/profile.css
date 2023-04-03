@@ -1,0 +1,127 @@
+body{
+    background-color: #01303F;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.logo {
+    height: 64px;
+}
+
+#header {
+    transition: background-color 0.5s ease-in-out;
+    margin-top: 12px;
+    height: 10vh;
+}
+
+/* search form*/
+
+
+p {
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 12px;
+}
+
+/* button header */
+button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+#top-right {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-left: 12px;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    size: 16px;
+}
+
+i {
+    color: #01303F;
+}
+
+.input-icons input:focus+i {
+    display: none;
+}
+
+li i {
+    margin-right: 10px;
+}
+
+.notificationButton ul, .messButton ul, .friendsButton ul {
+    width: 500px;
+}
+
+#body{
+    border-top: 1px solid #ffffff;
+}
+
+.cover-image{
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-image img{
+    width: 900px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.btn-change-cover-image{
+    position: absolute;
+  top: 40%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  color: #01303F;
+  border: none;
+  border-radius: 5px;
+  font-size: 9px;
+  width: 117px;
+  height: 23px;
+  opacity: 90%;
+}
+
+.btn-change-cover-image i{
+    margin-right: 5px;
+    direction: rtl;
+}
+
+
+.avater-image img{
+    border-radius: 50%;
+    width: 120px;
+    border: 2px solid #ffffff;
+    position: absolute; 
+    top: 35%; 
+    left: 200px;
+}
+.avater-image i{
+    color: #01303F;
+    width: 16px;
+}
+
+.btn-upload-avatar-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute; 
+    top: 50%; 
+    left: 280px;
+}
