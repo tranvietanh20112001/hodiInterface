@@ -1,16 +1,12 @@
-.image-container {
-  position: relative;
-}
-
-.button-on-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background-color: #555;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-}
+.color-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: red;
+  }

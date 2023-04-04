@@ -11,11 +11,30 @@
 </head>
 
 <body>
+  <button class="color-btn active">Button 1</button>
+<button class="color-btn">Button 2</button>
+<button class="color-btn">Button 3</button>
+<button class="color-btn">Button 4</button>
+<button class="color-btn">Button 5</button>
 
-  <div class="image-container">
-    <img src="../public/img/intropage1.jpg" alt="Image">
-    <button class="button-on-image">Button</button>
-  </div>
+  
+  <script>
+    const colorBtns = document.querySelectorAll('.color-btn');
+
+colorBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    colorBtns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+    btn.classList.add('active');
+  });
+  
+  if (index === 0) {
+    btn.classList.add('active');
+  }
+});
+
+  </script>
 </body>
 
 </html>

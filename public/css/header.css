@@ -1,0 +1,67 @@
+body{
+    background-color: #01303F;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.logo {
+    height: 64px;
+}
+
+#header {
+    transition: background-color 0.5s ease-in-out;
+    margin-top: 12px;
+    height: 10vh;
+}
+
+/* search form*/
+
+button{
+    border: none;
+}
+p {
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 12px;
+}
+
+/* button header */
+#header button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+#top-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    size: 16px;
+}
+
+i {
+    color: #01303F;
+}
+
+.input-icons input:focus+i {
+    display: none;
+}
+
+li i {
+    margin-right: 10px;
+}
+
+.notificationButton ul, .messButton ul, .friendsButton ul {
+    width: 500px;
+}

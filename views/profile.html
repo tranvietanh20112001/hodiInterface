@@ -1,113 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap">
-    <link rel="stylesheet" href="../public/css/profile.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+    />
+    <link rel="stylesheet" href="../public/css/profile.css" />
     <title>Trang cá nhân</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="row" id="header">
-            <!--- Logo --->
-            <div class="col-3">
-                <img src="../public/img/logo.png" class="logo">
-            </div>
-            <!---- Search form ----->
-            <div class="col-6">
-                <form class="input-icons">
-                    <input type="search" class="form-control" placeholder="Tìm kiếm giáo viên, bài giảng, đề thi,..."
-                        aria-label="Search">
-                    <i class="fa fa-search"></i>
-                </form>
         
-                <p>Trending keywords,Trending keywords,Trending keywords,Trending keywords,...</p>
-            </div>
-            <div class="col-3" id="top-right">
-                <div class="listButton">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars"></i></button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                </div>
-                <div class="friendsButton">
-                    <button data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-users"></i></button>
-                    <ul class="dropdown-menu">
-                        <li class="heading">Lời mời kết bạn</li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="content">Không có lời mời kết bạn mới</li>
-                    </ul>
-                </div>
-                <div class="messButton">
-                    <button data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-comments"></i></button>
-                    <ul class="dropdown-menu">
-                        <li class="heading">Tin nhắn</li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="content">Không có tin nhắn mới</li>
-                    </ul>
-                </div>
-                <div class="notificationButton">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i></button>
-                    <ul class="dropdown-menu">
-                        <li class="heading">Thông báo</li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="content">Không có thông báo mới</li>
-                    </ul>
-                </div>
-                <div class="accountButton">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>Hồ sơ</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-gear"></i>Cài đặt và quyền riêng tư</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sun"></i>Màn hình và trợ năng</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a></li>
-                    </ul>
-                </div>
-        
-            </div>
-
+        <iframe src="../views/partials/header.html" width="100%" height="100px" frameborder="0"></iframe>
+    
+      <div class="row" id="person-avatar-info">
+        <div class="cover-image">
+          <img src="../public/img/image-login.jpg" />
+          <button class="btn-change-cover-image dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-camera"></i>Chỉnh sửa ảnh bìa
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-image"></i> Chọn ảnh</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-upload"></i>Tải ảnh lên</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-trash"></i>Xóa ảnh</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <div class="row" id="body">
-            <div class="cover-image">
-                <img src="../public/img/image-login.jpg">
-                <button class="btn-change-cover-image dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-camera"></i>Chỉnh sửa ảnh bìa</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i> Chọn ảnh</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-upload"></i>Tải ảnh lên</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash"></i>Xóa ảnh</a></li>
-                  </ul>
-            </div>
-            <div class="avater-image">
-                <img src="../public/img/phuongly - avatar.jpg" >
-                <button class="btn-upload-avatar-image" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-camera" ></i></button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i> Chọn ảnh</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-upload"></i>Tải ảnh lên</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash"></i>Xóa ảnh</a></li>
-                  </ul>
-            </div>
+        <div class="avater-image">
+          <img src="../public/img/phuongly - avatar.jpg" />
+          <button
+            class="btn-upload-avatar-image"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-camera"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-image"></i> Chọn ảnh</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-upload"></i>Tải ảnh lên</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-trash"></i>Xóa ảnh</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="person-info">
+          <h1>Nguyễn Phương Ly</h1>
+          <p>Trường THPT Ngô Gia Tự</p>
+        </div>
+        <div class="btn-edit-person-info">
+          <button>
+            <i class="fa-solid fa-pencil" style="margin-right: 2px"></i>Chỉnh
+            sửa thông tin cá nhân
+          </button>
+        </div>
+      </div>
+      <div class="row" id="person-info-list-fuctions">
+        <button class="color-btn active">Bài viết</button>
+        <button class="color-btn">Giới thiệu</button>
+        <button class="color-btn">Ảnh</button>
+        <button class="color-btn">Bạn bè</button>
+        <button class="color-btn">Nhóm</button>
+      </div>
+
+      <div class="row" id="body-content">
+        <div class="left">
+          <div class="status">
+            <div class="header">
+              <p>Hoàn thành hồ sơ</p>
+              <p style="margin-left: 150px">0%</p>
+            </div>
+            <div class="progress-bar"></div>
+            <hr />
+            <div class="status-button">
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm ảnh hồ sơ của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm bìa hồ sơ của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm tiểu sử của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm ngày sinh của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm mối quan hệ của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm công việc của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm vị trí của bạn
+              </button>
+              <button>
+                <i class="fa-solid fa-circle-plus"></i>Thêm trình độ của bạn
+              </button>
+            </div>
+          </div>
+
+          <div class="image">
+            <h1>Ảnh</h1>
+            <hr>
+            <p> Chưa có ảnh mới</p>
+          </div>
+
+          <div class="friend">
+        <h1>Bạn bè</h1>
+        <hr>
+        <p>Chưa có bạn bè mới</p>
+          </div>
+        </div>
+        <div class="right">
+          <button
+            type="button"
+            class="post-button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <img src="../public/img/phuongly - avatar.jpg" class="avatar-list-contact"/>
+            Bạn đang nghĩ gì ?
+          </button>
+
+          <div class="post">
+            <i class="fa-solid fa-newspaper"></i>
+            <p>Bạn chưa đăng bài mới</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="../public/js/profile/profilebtn.js"></script>
+  </body>
 </html>
